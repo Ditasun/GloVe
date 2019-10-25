@@ -42,7 +42,7 @@ for i in range(len(corpus)):
 # create library
 my_dict = list(set(tokens))
 
-#присвоение индексов к словам разделенным из предложения
+#giving of indices to words separated from a sentence
 word2idx={}
 idx2word={}
 for ind,token in enumerate(my_dict):
