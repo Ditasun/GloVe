@@ -76,7 +76,7 @@ left_biases, right_biases = [
 optimize = optim.Adam(left_emb + right_emb + left_biases + right_biases, lr = l_rate)
 
 
-# преобразование векторов
+#vector conversion
 def gen_batch():
     sample = np.random.choice(np.arange(len(transp)), size=batch_size, replace=False)
     l_vecs, r_vecs, covals, l_v_bias, r_v_bias = [], [], [], [], []
